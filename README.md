@@ -56,23 +56,39 @@ lms.sqlite
 * Uma Aula pertence a um único Curso
 * Integridade garantida por Foreign Key
 
+## Como executar o projeto
+### Rodar no servidor
+```
+node --no-warnings --watch index.ts
+
+```
+
+### Rodar no client
+```
+node --no-warnings --watch client.mjs
+
+```
+
+
 ## Rotas da API
 
 ### Cursos
-`POST /cursos - 
-GET /cursos -
-GET /cursos/:slug -
-PUT /cursos/:slug -
+```
+POST /cursos
+GET /cursos
+GET /cursos/:slug
+PUT /cursos/:slug
 DELETE /cursos/:slug`
-
+```
 ### Aulas
-`POST /cursos/:cursoSlug/aulas -
-GET /cursos/:cursoSlug/aulas -
-GET /cursos/:cursoSlug/aulas/:aulaSlug -
-PUT /cursos/:cursoSlug/aulas/:aulaSlug -
-DELETE /cursos/:cursoSlug/aulas/:aulaSlug -
-DELETE /cursos/:cursoSlug/aulas`
-
+```
+POST /cursos/:cursoSlug/aulas
+GET /cursos/:cursoSlug/aulas
+GET /cursos/:cursoSlug/aulas/:aulaSlug
+PUT /cursos/:cursoSlug/aulas/:aulaSlug
+DELETE /cursos/:cursoSlug/aulas/:aulaSlug
+DELETE /cursos/:cursoSlug/aulas
+```
 ## Exemplo de Requisição
 
 ### Criar Curso
